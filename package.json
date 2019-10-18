@@ -1,5 +1,5 @@
 {
-  "name": "discord-bot-utils",
+  "name": "croc-bot-utils",
   "version": "1.0.0",
   "description": "Discord.js Bot Utilities",
   "main": "index.js",
