@@ -1,0 +1,29 @@
+{
+  "name": "discord-bot-utils",
+  "version": "1.0.0",
+  "description": "Discord.js Bot Utilities",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crock/discord-bot-utils.git"
+  },
+  "keywords": [
+    "discord.js",
+    "discord"
+  ],
+  "author": "Alex Crocker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crock/discord-bot-utils/issues"
+  },
+  "homepage": "https://github.com/crock/discord-bot-utils#readme",
+  "devDependencies": {
+    "mocha": "^6.2.1"
+  }
+}
