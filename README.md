@@ -1,8 +1,27 @@
 # Discord.js Bot Utils
 
-These are some core utility classes for Discord.js bots. It is available on the GitHub Package Registry [here](https://github.com/crock/discord-bot-utils/packages/39768).
+These are some core utility classes for Discord.js bots.
 
 ## Usage
+
+Create a `.env` file in the root directory of your bot with the following keys:
+```
+# Discord
+DISCORD_BOT_TOKEN=
+
+# Miscellaneous Configuration
+CMD_PREFIX=
+WEB_SERVER_PORT=
+API_ROUTE_PREFIX=
+
+# Firebase Configuration
+FIREBASE_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_DB_URL=
+FIREBASE_PROJECT_ID=
+FIREBASE_STORAGE_BUCKET=
+FIREBASE_MESSAGING_SENDER_ID=
+```
 
 **Client module**
 
