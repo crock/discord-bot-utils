@@ -22,6 +22,7 @@ FIREBASE_PROJECT_ID=
 FIREBASE_STORAGE_BUCKET=
 FIREBASE_MESSAGING_SENDER_ID=
 ```
+Don't forget to call `require('dotenv').config()` in the start file of your bot!
 
 **Client module**
 
@@ -37,10 +38,10 @@ Client.login();
 ```js
 const { Auth } = require('@crock/discord-bot-utils');
 
-Auth.isOwner(member);
-Auth.isAdmin(member);
-Auth.isMod(member);
-Auth.isRole('foobar', member);
+Auth.isOwner(Object member);
+Auth.isAdmin(Object member);
+Auth.isMod(Object member);
+Auth.isRole(String 'foobar', Object member);
 ```
 
 **Configuration module**
