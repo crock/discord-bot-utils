@@ -1,1 +1,1 @@
-import { Config } from '../index';
+const { Config } = require('../index');

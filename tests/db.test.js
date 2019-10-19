@@ -1,1 +1,1 @@
-import { DB } from '../index';
+const { DB } = require('../index');

@@ -8,7 +8,7 @@ class View {
     this.templateName = name.endsWith('.html')
       ? name.replace('.html', '')
       : name;
-    this.templateDir = path.join(__dirname, '..', 'server', 'templates');
+    this.templateDir = path.join(process.cwd(), 'server', 'templates');
     this.templatePath = path.join(
       this.templateDir,
       email ? 'email' : 'web',

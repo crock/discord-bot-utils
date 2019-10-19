@@ -54,7 +54,7 @@ class ApiServer {
   }
 
   getRoutes() {
-    return require(path.join(__dirname, '..', 'server', 'routes.js'));
+    return require(path.join(process.cwd(), 'server', 'routes.js'));
   }
 
   startListening() {

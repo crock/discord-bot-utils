@@ -6,12 +6,12 @@ const Config = require('./config');
 class BotClient {
   constructor() {
     this.client = new Discord.Client();
-
-    fs.readdir(path.join(__dirname, '..', 'events'), (err, files) => {
+    let eventsPath = path.join(process.cwd(), 'events');
+    fs.readdir(eventsPath, (err, files) => {
       if (err) throw err;
       files.forEach(file => {
         let eventName = file.split('.')[0];
-        let eventFile = require(`../events/${file}`);
+        let eventFile = require(path.join(eventsPath, file));
         this.client.on(eventName, object => eventFile.run(object));
       });
     });

@@ -1,1 +1,1 @@
-import { Auth } from '../index';
+const { Auth } = require('../index');

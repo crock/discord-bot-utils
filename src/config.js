@@ -41,7 +41,7 @@ class Config {
     let routePrefix = process.env.API_ROUTE_PREFIX.startsWith('/')
       ? process.env.API_ROUTE_PREFIX.slice(1)
       : process.env.API_ROUTE_PREFIX;
-    return routePrefix || 'codecareer';
+    return routePrefix || 'api';
   }
 
   getRef() {
@@ -63,8 +63,6 @@ class Config {
 
   getCommandPrefix() {
     return this.config.cmdPrefix;
-    // let data = await this.configRef.once('value')
-    // return data.val().cmdPrefix
   }
 
   getChannel(name) {

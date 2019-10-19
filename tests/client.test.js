@@ -1,1 +1,1 @@
-import { Client } from '../index';
+const { Client } = require('../index');
