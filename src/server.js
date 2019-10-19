@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const colors = require('colors');
 const http = require('http');
 const Config = require('./config');
 

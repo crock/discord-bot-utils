@@ -1,6 +1,6 @@
 {
   "name": "@crock/discord-bot-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Discord.js Bot Utilities",
   "main": "index.js",
   "engines": {
@@ -32,13 +32,13 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
-    "mocha": "^6.2.1"
+    "mocha": "^6.2.2"
   },
   "dependencies": {
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0",
     "firebase": "^7.2.1",
     "handlebars": "^4.4.3",
-    "colors": "^1.3.3"
+    "colors": "^1.4.0"
   }
 }

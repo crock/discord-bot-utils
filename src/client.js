@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const colors = require('colors');
 const Discord = require('discord.js');
 const Config = require('./config');
 
@@ -33,7 +34,7 @@ class BotClient {
         console.log(
           [
             'Login failed'.red,
-            '\n❌ : There were some problems during logging to discord.\n',
+            '\n❌ : There were some problems connecting to Discord.\n',
             `${err}`.red
           ].join('')
         );
