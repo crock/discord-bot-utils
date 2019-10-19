@@ -1,5 +1,5 @@
 {
-  "name": "croc-bot-utils",
+  "name": "@crock/discord-bot-utils",
   "version": "1.0.0",
   "description": "Discord.js Bot Utilities",
   "main": "index.js",
@@ -15,7 +15,9 @@
   },
   "keywords": [
     "discord.js",
-    "discord"
+    "discord",
+    "discord-js",
+    "discord-bot"
   ],
   "author": "Alex Crocker",
   "license": "MIT",
@@ -23,6 +25,9 @@
     "url": "https://github.com/crock/discord-bot-utils/issues"
   },
   "homepage": "https://github.com/crock/discord-bot-utils#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "devDependencies": {
     "mocha": "^6.2.1"
   },
