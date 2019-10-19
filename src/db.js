@@ -38,7 +38,7 @@ class DB {
 	Log files can be found at ./logs */
   logData(data) {
     fs.appendFileSync(
-      path.join(process.cwd(), '..', 'logs', 'firebase.log'),
+      path.join(process.cwd(), 'logs', 'firebase.log'),
       JSON.stringify(data.val()) + '\n',
       err => {
         if (err) throw err;
@@ -51,14 +51,13 @@ class DB {
 	Log files can be found at ./logs */
   errorData(data) {
     fs.appendFileSync(
-      path.join(process.cwd(), '..', 'logs', 'firebase.error.log'),
+      path.join(process.cwd(), 'logs', 'firebase.error.log'),
       JSON.stringify(data.val()) + '\n',
       err => {
         if (err) throw err;
         console.log(
           `An error occured while listening to database.\nLog can be found at ${path.join(
             process.cwd(),
-            '..',
             'logs',
             'firebase.error.log'
           )}`.red

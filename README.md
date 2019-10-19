@@ -1,29 +1,13 @@
 # Discord.js Bot Utils
 
-These are some core utilty classes for Discord.js bots that are used in all of [Crock's](https://github.com/crock) discord bots.
-
-## Installation
-
-You can install this package with your Node package manager of choice.
-
-**NPM**
-
-```
-npm install @crock/discord-bot-utils
-```
-
-**Yarn**
-
-```
-yarn add @crock/discord-bot-utils
-```
+These are some core utility classes for Discord.js bots. It is available on the GitHub Package Registry [here](https://github.com/crock/discord-bot-utils/packages/39768).
 
 ## Usage
 
 **Client module**
 
 ```js
-import { Client } from '@crock/discord-bot-utils';
+const { Client } = require('@crock/discord-bot-utils');
 
 Client.getClient();
 Client.login();
@@ -32,7 +16,7 @@ Client.login();
 **Auth (permission) module**
 
 ```js
-import { Auth } from '@crock/discord-bot-utils';
+const { Auth } = require('@crock/discord-bot-utils');
 
 Auth.isOwner(member);
 Auth.isAdmin(member);
@@ -43,7 +27,7 @@ Auth.isRole('foobar', member);
 **Configuration module**
 
 ```js
-import { Config } from '@crock/discord-bot-utils';
+const { Config } = require('@crock/discord-bot-utils');
 
 Config.initConfig();
 Config.resetConfig();
@@ -68,7 +52,7 @@ Config.setRole(String role_type, String id);
 **Database module**
 
 ```js
-import { DB } from '@crock/discord-bot-utils';
+const { DB } = require('@crock/discord-bot-utils');
 
 DB.getDatabase();
 DB.startListening(String path, String eventType = 'value');
