@@ -1,6 +1,6 @@
 {
   "name": "@crock/discord-bot-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Discord.js Bot Utilities",
   "main": "index.js",
   "engines": {

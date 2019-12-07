@@ -60,13 +60,14 @@ Config.getApiRoutePrefix();
 Config.getRef();
 Config.getConfig();
 Config.getCommandPrefix();
-Config.getCommandPrefix();
 Config.getChannel(String name);
 Config.getRole(String roleType);
+Config.getVerifyMessage();
 
 Config.setCommandPrefix(String prefix);
 Config.setChannel(String channel_type, String id);
 Config.setRole(String role_type, String id);
+Config.setVerifyMessage(String id);
 ```
 
 **Database module**
